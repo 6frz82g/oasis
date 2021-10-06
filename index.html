@@ -7,16 +7,20 @@
     <script type="text/javascript" src="conversational-form.min.js"></script>
     <link rel="stylesheet" href="conversational-form.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <marquee scrollamount="12">
-        <p id="date">October 29th... that's in</p>
-        <p id="demo"></p>
-        <p id="msg">...RSVP for location... 21+ ... $5 sliding scale... 10pm - 3am... </p>
-        <a id="ig" href="#" target="_blank" rel="noopener noreferrer">...follow our ig @oasiswas</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">...read the community rules...</a>
-    </marquee>
+    <div class="info">
+      <p>Friday, October 29th</p>
+      <p>RSVP for location</p>
+      <p>21+ $5 sliding scale</p>
+      <a href="#">@oasiswas</a>
+    </div>
+        <!-- <h1><p id="date">October 29th... 10pm - 3am</p></h1>
+        <h3><p id="msg">...RSVP for location... 21+ ... $5 sliding scale... </p></h3>
+        <h4><a id="ig" href="#" target="_blank" rel="noopener noreferrer">...dm ig @oasiswas</a></h4>
+        <h5><a href="#" target="_blank" rel="noopener noreferrer">...read the community rules...</a></h5> -->
     <!-- <form class="form" id="my-form-element" action="https://goo.gl/maps/xkRQ2QxBTy1PY9GDA" method="get"  target="_blank" rel="noopener noreferrer" cf-form ...>
       <label for="name">what's your name?</label>
       <input type="text" id="name" name="rsvp_name" value="">
@@ -33,38 +37,9 @@
     </form> -->
     <div class="inside">
       <div class="logo">
-        <img class="gif" src="oasis2.gif" alt="gif">
+        <img class="gif" src="oasis.gif" alt="gif">
       </div>
     </div>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Oct 29, 2021 21:21:21").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
   </body>
 </html>

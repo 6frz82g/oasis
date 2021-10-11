@@ -6,6 +6,7 @@ body {
   background-color: black;
   font-family: sans-serif;
   font-size: 2em;
+  overflow-y:scroll;
 }
 p {
   color: yellow;

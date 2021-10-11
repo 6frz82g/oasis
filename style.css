@@ -6,7 +6,8 @@ body {
   background-color: black;
   font-family: sans-serif;
   font-size: 2em;
-  overflow-y:scroll;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 p {
   color: yellow;
@@ -46,18 +47,14 @@ h5 {
   margin-top: -50%;
   margin-left: -50%;
 }
-.form {
-  position: relative;
-}
 .info {
-  position: fixed;
+  position: absolute;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 5%;
   width: 50%;
   left: 25%;
   top: 5%;
-  overflow-y: scroll;
 }
 /* .rsvp {
   position: fixed;

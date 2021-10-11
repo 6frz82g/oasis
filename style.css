@@ -21,10 +21,14 @@ h5 {
   font-size: 3em;
 }
 input {
-  height: 5rem;
+  height: 2.5rem;
 }
-button {
-  height: 5rem;
+input.larger {
+  width: 35px;
+  height: 35px;
+}
+.button {
+  font-size: 2rem;
 }
 .inside {
   position: fixed;
@@ -52,7 +56,7 @@ button {
 }
 .info {
   position: relative;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 5%;
 }
 /* .rsvp {
